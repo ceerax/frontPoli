@@ -1,0 +1,72 @@
+.Regi-body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+        margin: 0;
+}
+
+.Registro-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form {
+    text-align: center;
+}
+
+.reg-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.reg-nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.reg-nav li.active a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.reg-nav li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.reg-form-group {
+    margin-bottom: 15px;
+}
+
+.reg-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+.reg-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reg-button:hover {
+    background-color: #3e8e41; 
+
+}

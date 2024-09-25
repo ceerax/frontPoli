@@ -1,0 +1,56 @@
+/* Establece el estilo general del cuerpo de la página */
+.Login-body {
+    font-family: Arial, sans-serif; /* Define la fuente a utilizar para el texto */
+    background-color: #f2f2f2; /* Establece un color de fondo gris claro */
+    display: flex; /* Utiliza el modelo de caja flexible para alinear elementos */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Establece la altura del cuerpo al 100% de la altura de la ventana */
+    margin: 0; /* Elimina el margen por defecto del navegador */
+}
+
+/* Estilo específico para el contenedor de inicio de sesión */
+.Login-container {
+    background-color: #fff; /* Define un color de fondo blanco para el contenedor */
+    padding: 20px; /* Agrega un espaciado interno de 20 píxeles */
+    border-radius: 5px; /* Redondea las esquinas del contenedor */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra suave para darle profundidad */
+}
+
+/* Estilo para el formulario dentro del contenedor */
+.form {
+    text-align: center; /* Centra el texto dentro del formulario */
+}
+
+/* Espaciado entre grupos de formulario */
+.form-group {
+    margin-bottom: 15px; /* Agrega un margen inferior de 15 píxeles a cada grupo */
+}
+
+/* Estilo para las etiquetas de los campos del formulario */
+label {
+    display: flex; /* Utiliza flexbox para organizar el contenido dentro de la etiqueta */
+    margin-bottom: 5px; /* Agrega un margen inferior de 5 píxeles a las etiquetas */
+}
+
+/* Estilo para los campos de entrada de texto */
+input {
+    padding: 10px; /* Agrega un espaciado interno de 10 píxeles */
+    border: 1px solid #ccc; /* Define un borde gris claro alrededor del campo */
+    border-radius: 4px; /* Redondea las esquinas de los campos de entrada */
+}
+
+/* Estilo para el botón de inicio de sesión */
+.Login-button {
+    background-color: #4CAF50; /* Establece un color de fondo verde para el botón */
+    color: white; /* Define el color del texto en blanco */
+    padding: 10px 20px; /* Agrega espaciado interno de 10 píxeles en vertical y 20 píxeles en horizontal */
+    border: none; /* Elimina el borde predeterminado del botón */
+    border-radius: 4px; /* Redondea las esquinas del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+}
+
+/* Estilo para el botón al pasar el mouse */
+.Login-button:hover {
+    background-color: #3e8e41; /* Cambia el color de fondo a un verde más oscuro al pasar el cursor */
+}
