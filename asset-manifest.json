@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/frontPoli/static/css/main.1dc14d87.css",
+    "main.js": "/frontPoli/static/js/main.f61c5c03.js",
+    "static/js/453.5633242b.chunk.js": "/frontPoli/static/js/453.5633242b.chunk.js",
+    "static/media/DeWatermark.ai_1728323293359.png": "/frontPoli/static/media/DeWatermark.ai_1728323293359.4d9222e7abec0995e876.png",
+    "index.html": "/frontPoli/index.html",
+    "main.1dc14d87.css.map": "/frontPoli/static/css/main.1dc14d87.css.map",
+    "main.f61c5c03.js.map": "/frontPoli/static/js/main.f61c5c03.js.map",
+    "453.5633242b.chunk.js.map": "/frontPoli/static/js/453.5633242b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1dc14d87.css",
+    "static/js/main.f61c5c03.js"
+  ]
+}
