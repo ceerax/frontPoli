@@ -1,0 +1,13 @@
+/* Solo afecta a la pantalla de Mv */
+.mv-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+  }
+  
+  .mv-footer {
+    margin-top: auto; /* Asegura que el footer esté al final */
+  }
+  
+  /* Estilos adicionales que solo afecten a la pantalla de Mv */
+  

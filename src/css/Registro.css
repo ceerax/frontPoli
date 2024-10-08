@@ -6,13 +6,17 @@
     align-items: center;
     height: 100vh;
         margin: 0;
+        background-image: url("https://www.lis.eu/content/uploads/2022/01/LIS-Logistikweisen-2022-2-1024x576.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+       background-position: center;
 }
 
 .Registro-container {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 .form {

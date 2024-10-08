@@ -12,7 +12,7 @@ const Registro = () => {
           <li><a href="#">Iniciar Sesión</a></li> {/* Enlace a la página de inicio de sesión */}
           <li  className="active"> <Link to="/">login</Link></li> {/* Enlace activo que indica que estamos en la página de registro */}
         </ul>
-        <form> {/* Elemento de formulario que captura la información del nuevo usuario */}
+        <form className='Registro-container'> {/* Elemento de formulario que captura la información del nuevo usuario */}
           {/* Campo de entrada para el nombre del usuario */}
           <div className="form-group">
             <label htmlFor="nombre">Nombre:</label> {/* Etiqueta para el campo de nombre */}
@@ -74,7 +74,7 @@ const Registro = () => {
             />
           </div>
           {/* Botón para enviar el formulario de registro */}
-          <button className='reg-button' type="submit">Registrarse</button> {/* Botón que envía el formulario con los datos del nuevo usuario */}
+          <button className='reg-button' type="submit"><Link to="/">Registrarse</Link> </button> {/* Botón que envía el formulario con los datos del nuevo usuario */}
         </form>
       </div> 
     </div>

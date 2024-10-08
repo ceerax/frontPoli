@@ -7,6 +7,10 @@
     align-items: center; /* Centra el contenido verticalmente */
     height: 100vh; /* Establece la altura del cuerpo al 100% de la altura de la ventana */
     margin: 0; /* Elimina el margen por defecto del navegador */
+    background-image: url("../img/DeWatermark.ai_1728323293359.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Estilo específico para el contenedor de inicio de sesión */
@@ -14,7 +18,7 @@
     background-color: #fff; /* Define un color de fondo blanco para el contenedor */
     padding: 20px; /* Agrega un espaciado interno de 20 píxeles */
     border-radius: 5px; /* Redondea las esquinas del contenedor */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra suave para darle profundidad */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3); /* Agrega una sombra suave para darle profundidad */
 }
 
 /* Estilo para el formulario dentro del contenedor */

@@ -1,40 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 // Componente funcional Inicio que contiene la estructura de la página principal
 const Inicio = () => {
+  const manejarConsultaGuia = () => {
+    // Mostrar la alerta de SweetAlert2
+    Swal.fire({
+      title: "Oops...",
+      text: "No se encuentra la guía.",
+      icon: "error",
+      confirmButtonText: "Aceptar",
+    });
+  };
+
   return (
     <div>
       {/* Barra de navegación con fondo oscuro */}
       <nav className="navbar navbar-light  bg-dark">
         <div class="container-fluid">
           {/* Marca de la compañía, en este caso "Ceerax", con color blanco */}
-          <Link to="/" class="navbar-brand  text-white">Ceerax</Link>
+          <Link to="/inicio" class="navbar-brand  text-white">
+            Ceerax
+          </Link>
 
           {/* Lista de navegación alineada a la derecha */}
           <ul class="nav justify-content-end">
             {/* Enlace de navegación activo */}
             <li class="nav-item">
-              <Link to="/Mv" class="nav-link active" aria-current="page" href="#">
-                Active
+              <Link
+                to="/inicio"
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+              >
+                Inicio
               </Link>
             </li>
 
             {/* Otros enlaces de navegación */}
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">
-                Link
-              </a>
+              <Link to={"/inicio"} class="nav-link text-white" href="#">
+                Admin
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">
-                Link
-              </a>
+              <Link to={"/Mv"} class="nav-link text-white" href="#">
+                MV
+              </Link>
             </li>
 
             {/* Botón primario dentro de la barra de navegación */}
             <button type="button" class="btn btn-primary">
-              Primary
+              <Link style={{ color: 'white', textDecoration: 'none' }} to={"/"}>Cerrar Sesión</Link>
             </button>
           </ul>
         </div>
@@ -45,14 +63,19 @@ const Inicio = () => {
         {/* Div centralizado vertical y horizontalmente con fondo azul claro */}
         <div
           className="d-flex align-items-center justify-content-center"
-          style={{ height: '50vh', backgroundColor: '#98c1df' }} 
+          style={{ height: "50vh", backgroundColor: "#98c1df" }}
         >
           {/* Contenido centrado con ícono y texto */}
           <div class="text-center">
             <i class="bi-truck fs-1"></i> {/* Icono de un camión */}
             <h1 class="display-4">Logística</h1> {/* Título principal */}
             <p class="lead">CEERAX</p> {/* Subtítulo */}
-            <button class="btn btn-primary">Rotar de puesto</button> {/* Botón primario */}
+            <input type="text" />
+            <div className="container mt-3">
+              <button className="btn btn-primary" onClick={manejarConsultaGuia}>
+                Consultar guía
+              </button>
+            </div>
           </div>
         </div>
 
@@ -142,11 +165,11 @@ const Inicio = () => {
 
         {/* Sección amarilla con tarjetas centradas */}
         <div
-          style={{ backgroundColor: '#FFD700', height: '50vh' }} 
+          style={{ backgroundColor: "#FFD700", height: "50vh" }}
           className="d-flex flex-column justify-content-center align-items-center"
         >
-          <h1 className="text-center">Título Centrados</h1> {/* Título centrado */}
-
+          <h1 className="text-center">¿Como lo ayudamos?</h1>{" "}
+          {/* Título centrado */}
           {/* Contenedor para las tarjetas */}
           <div className="container">
             <div className="row">
@@ -154,16 +177,22 @@ const Inicio = () => {
               <div className="col-md-6 mb-4">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title">Tarjeta 1</h5>
-                    <p className="card-text">Contenido de la tarjeta 1.</p>
+                    <h2 className="card-title">1.</h2>
+                    <p className="card-text">
+                      "Simplificamos su logística y contribuimos al mejoramiento
+                      de su margen operativo."
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="col-md-6 mb-4">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title">Tarjeta 2</h5>
-                    <p className="card-text">Contenido de la tarjeta 2.</p>
+                    <h2 className="card-title">2.</h2>
+                    <p className="card-text">
+                      "Generamos experiencias positivas a sus clientes,
+                      fidelizándolos a su marca."
+                    </p>
                   </div>
                 </div>
               </div>
@@ -173,16 +202,22 @@ const Inicio = () => {
               <div className="col-md-6 mb-4">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title">Tarjeta 3</h5>
-                    <p className="card-text">Contenido de la tarjeta 3.</p>
+                    <h2 className="card-title">3.</h2>
+                    <p className="card-text">
+                      "Desarrollamos soluciones simples y flexibles adaptadas a
+                      su negocio."
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="col-md-6 mb-4">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title">Tarjeta 4</h5>
-                    <p className="card-text">Contenido de la tarjeta 4.</p>
+                    <h2 className="card-title">4.</h2>
+                    <p className="card-text">
+                      "Diseñamos soluciones tecnológicas al servicio de la
+                      logística."
+                    </p>
                   </div>
                 </div>
               </div>
